@@ -2,31 +2,23 @@ import { h, Component } from 'preact';
 import { observer, inject } from 'mobx-preact';
 
 //storesから使用するstoreを選択する
-@inject('movie')
+@inject('git')
 @observer
 export default class Root extends Component {
 
   componentDidMount() {
-    this.props.movie.awaitFetch();
+    this.props.git.getUser('ArakiTakaki');
   }
 
   render() {
-    const { movie } = this.props;
-    let list = [];
+    const {userDetail} = this.props.git;
 
-    for (let item of movie.items) {
-      list.push(
-        <div key={item.id}>
-          <h1>{item.name}</h1>
-          <p>{item.director}</p>
-          <p>{item.rating}</p>
-        </div>
-      )
-    }
-
+    console.log(Object.keys(userDetail));
     return (
       <div>
-        {list}
+        <h1>
+        {userDetail.name}
+        </h1>
       </div>
     )
 

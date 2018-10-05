@@ -7,7 +7,7 @@
     "eslint": "eslint src/",
     "prod": "webpack --config ./webpack.production.js",
     "production": "webpack --config ./webpack.production.js",
-    "mock_frontend": "webpack-dev-server --config ./webpack.mock.js --mode development --open"
+    "start": "webpack-dev-server --config ./webpack.mock.js --mode development --open"
   },
   "dependencies": {
     "axios": "^0.18.0",
