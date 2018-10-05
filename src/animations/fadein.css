@@ -1,0 +1,22 @@
+.def{
+  animation-name: fadein;
+  animation-play-state: running;
+  animation-duration: 500ms;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes fadein{
+  0% {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}

@@ -1,0 +1,42 @@
+.root{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sample1, .sample2, .sample3, .sample4{
+  display: inline-block;
+  background: #000;
+  width: 5px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.sample1{
+  animation: fadein 400ms ease 0s infinite alternate;
+}
+
+.sample2{
+  animation: fadein 400ms ease 100ms infinite alternate;
+}
+
+.sample3{
+  animation: fadein 400ms ease 200ms infinite alternate;
+}
+
+.sample4{
+  animation: fadein 400ms ease 300ms infinite alternate;
+}
+
+@keyframes fadein{
+  0% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(2);
+  }
+
+}
+

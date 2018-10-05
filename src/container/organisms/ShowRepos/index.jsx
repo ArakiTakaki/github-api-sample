@@ -1,12 +1,13 @@
 import { h, Component } from 'preact';
 import { observer, inject } from 'mobx-preact';
+import './style.css'
 
 @inject('git')
 @observer
 export default class ShowRepos extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
@@ -29,7 +30,7 @@ export default class ShowRepos extends Component {
     }
 
     return(
-      <div>
+      <div styleName="root">
         {list}
       </div>
     )

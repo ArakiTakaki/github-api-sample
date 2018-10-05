@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import { observer, inject } from 'mobx-preact';
-import ShowRepos from './ShowRepos';
+import ShowRepos from '../ShowRepos';
+import Fadein from  '../../../animations/fadein.css';
 
 @inject('git')
 @observer
@@ -24,7 +25,7 @@ export default class UserDetail extends Component {
     }
 
     return (
-      <div>
+      <div className={Fadein.def}>
         <h1>
           {user_detail.name}
         </h1>

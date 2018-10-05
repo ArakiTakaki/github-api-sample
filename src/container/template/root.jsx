@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import { observer, inject } from 'mobx-preact';
 import UserDetail from '../organisms/UserDetail';
+import LoadingModule from '../organisms/loading';
 
 //storesから使用するstoreを選択する
 @inject('git')
@@ -25,6 +26,7 @@ export default class Root extends Component {
   render() {
     return (
       <div>
+        <LoadingModule/>
         <input
           type="text"
           onInput={this.onTextChange.bind(this)}
