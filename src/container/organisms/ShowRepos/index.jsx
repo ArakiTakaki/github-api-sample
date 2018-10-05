@@ -19,10 +19,10 @@ export default class ShowRepos extends Component {
     for ( let repo of repos ){
       list.push(
         <div key={repo.id}>
-          <h1>
-            Repository Name :
-            <a href={repo.html_url}>{repo.name}</a>
-          </h1>
+          <h3>
+            リポジトリ
+            <a target="_brank" href={repo.html_url}>{repo.name}</a>
+          </h3>
           <p>CLONE URL {repo.git_url}</p>
           <p>CLONE URL {repo.ssh_url}</p>
         </div>
