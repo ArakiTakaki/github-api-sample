@@ -1,3 +1,4 @@
+const path = require('path');
 const fs = require('fs');
 fs.copyFile('develop.env','.env',function(err){
   if(err) console.error(err.stack);
@@ -5,7 +6,8 @@ fs.copyFile('develop.env','.env',function(err){
 });
 
 const dotenv = require('dotenv').config().parsed;
-let dir = __dirname + '/dist';
+let dir = path.resolve() + '/dist';
+
 if (dotenv.DIR_PATH != '') dir = dotenv.DIR_PATH;
 
 module.exports = {

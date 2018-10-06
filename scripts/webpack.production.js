@@ -5,7 +5,8 @@ fs.copyFile('production.env','.env',function(err){
 });
 
 const dotenv = require('dotenv').config().parsed;
-let dir = __dirname + '/dist';
+let dir = path.resolve() + '/dist';
+
 if (dotenv.DIR_PATH != '') dir = dotenv.DIR_PATH;
 console.log(dotenv.TEST)
 
