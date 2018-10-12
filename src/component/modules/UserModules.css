@@ -1,0 +1,39 @@
+
+.profile{
+  display: flex;
+}
+.profile svg{
+  width: 13px;
+}
+.profile__image{
+  width: 100px;
+  height: 100px;
+}
+.profile__text-content{
+  margin: 10px;
+  color: #333;
+}
+
+.profile__text-content__header{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile__text-content__repos{
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.repos{
+  display: flex;
+  margin: 10px;
+}
+.repos__detail{
+  margin: 10px;
+}
+.repos__detail-svg{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+}

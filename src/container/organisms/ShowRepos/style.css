@@ -1,11 +1,12 @@
 
 .root{
+  z-index: 999;
   animation-name: fadein;
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-delay: 0s;
   animation-iteration-count: 1;
-  animation-direction: normal;
+  animation-direction: none;
   animation-fill-mode: both;
 }
 

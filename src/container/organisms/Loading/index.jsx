@@ -6,15 +6,18 @@ import './style.css';
 @observer
 export default class LoadingModule extends Component {
 
-  render(){
-    const {now_loading_flag} = this.props.git;
-    if(now_loading_flag) return;
+  render() {
+    const { now_loading_flag } = this.props.git;
+    if (now_loading_flag) return;
     return (
-      <div styleName="root">
-        <span styleName="sample1"></span>
-        <span styleName="sample2"></span>
-        <span styleName="sample3"></span>
-        <span styleName="sample4"></span>
+      <div>
+        <div styleName="back"></div>
+        <div styleName="loading">
+          <span styleName="sample1"></span>
+          <span styleName="sample2"></span>
+          <span styleName="sample3"></span>
+          <span styleName="sample4"></span>
+        </div>
       </div>
     );
   }
